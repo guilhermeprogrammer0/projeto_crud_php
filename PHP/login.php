@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudo PHP</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
 <body>
@@ -19,10 +19,10 @@
             <h3>CRUD</h3>
         </div>
         <ul class="menu">
-            <li><a href="index.html"> Início </a></li>
+            <li><a href="../index.html"> Início </a></li>
             <li><a href="cadastro.php"> Cadastro </a></li>
             <li><a href="login.php"> Login</a></li>
-            <li><a href="sobre.html"> Sobre </a></li>
+            <li><a href="../sobre.html"> Sobre </a></li>
         </ul>
     </nav>
     <main class="main">
