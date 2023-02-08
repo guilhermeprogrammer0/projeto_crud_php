@@ -25,8 +25,12 @@ nav {
     position: relative;
     width: 100%;
 }
+#btn_toggle{
+    display:none;
+}
 
-#escrito {
+.escrito {
+    display: block;
     position: absolute;
     height: 100%;
     width: 25%;
@@ -35,7 +39,7 @@ nav {
     align-items: center;
 }
 
-#escrito h3 {
+.escrito h3 {
     font-family: 'Bebas Neue';
     color: white;
     font-size: 2em;
@@ -84,7 +88,6 @@ nav {
     height: 300px;
     justify-content: center;
 }
-
 .imagem {
     position: relative;
     width: 70%;

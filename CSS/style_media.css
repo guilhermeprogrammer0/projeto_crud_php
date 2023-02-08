@@ -1,0 +1,69 @@
+@charset "UTF8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300&display=swap');
+
+@media screen and (max-width:600px) {
+    header h1 {
+        font-size: 1em;
+    }
+
+    #btn_toggle {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    #btnToggle {
+        cursor: pointer;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .imagem {
+        width: 100%;
+        height: 500px;
+    }
+    .escrito{
+        display:none;
+    }
+    .escrito2 {
+        width: 100%;
+    }
+
+    .escrito2 h1 {
+        font-family: 'Oswald';
+        font-size: 1.9em;
+    }
+
+    .texto {
+        margin-top: 50px;
+        width: 80%;
+    }
+
+    #menu {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    #menu.menu_ativo .menu {
+        display: flex;
+        height: 500px;
+        flex-direction: column;
+        width: 65%;
+        border-top-left-radius: 9px;
+        border-bottom-left-radius: 9px;
+        justify-content: center;
+    }
+
+    .menu li a {
+        font-size: 1.7em;
+    }
+}
