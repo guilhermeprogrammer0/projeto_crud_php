@@ -12,13 +12,15 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/style_media.css">
 </head>
-
 <body>
     <header>
         <h1>Projeto Back-End</h1>
     </header>
-    <nav>
-        <div id="escrito">
+    <div id="btn_toggle">
+        <i class="fa-solid fa-bars fa-3x" id="btnToggle"></i>
+    </div>
+    <nav id="menu">
+        <div class="escrito">
             <h3>CRUD</h3>
         </div>
         <ul class="menu">
@@ -76,7 +78,7 @@
 
     ?>
  <script src="../JS/script2.js"></script>
- <script src="../JS/"></script>
+ <script src="../JS/menu.js"></script>
 </body>
 
 </html>
