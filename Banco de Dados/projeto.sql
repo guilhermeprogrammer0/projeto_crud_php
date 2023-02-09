@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 27-Dez-2022 às 12:48
+-- Tempo de geração: 09-Fev-2023 às 17:32
 -- Versão do servidor: 10.4.27-MariaDB
--- versão do PHP: 7.4.33
+-- versão do PHP: 8.0.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -26,6 +26,25 @@ USE `projeto`;
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `administrativo`
+--
+
+CREATE TABLE `administrativo` (
+  `id` int(11) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `senha` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Extraindo dados da tabela `administrativo`
+--
+
+INSERT INTO `administrativo` (`id`, `email`, `senha`) VALUES
+(1, 'menuadm2023@adm.com', 'menu2023');
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `cadastro`
 --
 
@@ -42,11 +61,18 @@ CREATE TABLE `cadastro` (
 
 INSERT INTO `cadastro` (`id`, `nome`, `email`, `senha`) VALUES
 (3, 'Kethilin', 'keth@teste.com', 'kethegui'),
-(4, 'Isabely Silva', 'isabelysouza123@gmail.com', 'isabely123.');
+(4, 'Isabely Silva', 'isabelysouza123@gmail.com', 'isabely123.'),
+(6, 'Guilherme', 'guilherme@teste.com', '152415');
 
 --
 -- Índices para tabelas despejadas
 --
+
+--
+-- Índices para tabela `administrativo`
+--
+ALTER TABLE `administrativo`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Índices para tabela `cadastro`
@@ -59,10 +85,16 @@ ALTER TABLE `cadastro`
 --
 
 --
+-- AUTO_INCREMENT de tabela `administrativo`
+--
+ALTER TABLE `administrativo`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT de tabela `cadastro`
 --
 ALTER TABLE `cadastro`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
