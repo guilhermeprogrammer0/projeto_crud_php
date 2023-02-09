@@ -11,6 +11,7 @@ session_start();
     <title>Menu Administrativo</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/style_adm.css">
+    <link rel="stylesheet" href="../CSS/style_media.css">
 </head>
 <body>
     <header>
