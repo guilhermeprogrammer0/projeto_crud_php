@@ -89,4 +89,7 @@
     .tabela-usuarios{
         width:80%;
     }
+    .card{
+        margin:auto;
+    }
 }
