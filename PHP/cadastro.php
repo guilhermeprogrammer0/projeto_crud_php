@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudo PHP</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/ae27920976.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../CSS/style.css">
@@ -22,10 +22,10 @@
        <nav id="menu">
         <div class="escrito"><h3>CRUD</h3></div>
         <ul class="menu">
-            <li><a href="index.html"> Início </a></li>
-            <li><a href="PHP/cadastro.php"> Cadastro </a></li>
-            <li><a href="PHP/login.php"> Login</a></li>
-            <li><a href="sobre.html"> Sobre </a></li>
+            <li><a href="../index.html"> Início </a></li>
+            <li><a href="cadastro.php"> Cadastro </a></li>
+            <li><a href="login.php"> Login</a></li>
+            <li><a href="../sobre.html"> Sobre </a></li>
         </ul>
     </nav>
     <main class="main">
@@ -73,7 +73,7 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="../JS/script.js"></script>
     <script src="../JS/menu.js"></script>
 </body>
 

@@ -8,9 +8,10 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudo PHP</title>
+    <title>Perfil</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style_media.css">
 </head>
 
 <body>
@@ -28,15 +29,18 @@ session_start();
     <header>
         <h1>Projeto Back-End</h1>
     </header>
+    <div id="btn_toggle">
+        <i class="fa-solid fa-bars fa-3x" id="btnToggle"></i>
+       </div> 
     <nav>
-        <div id="escrito">
+        <div class="escrito">
             <h3>CRUD</h3>
         </div>
         <ul class="menu">
-            <li><a href="index.html"> Início </a></li>
+            <li><a href="../index.html"> Início </a></li>
             <li><a href="cadastro.php"> Cadastro </a></li>
             <li><a href="login.php"> Login</a></li>
-            <li><a href="sobre.html"> Sobre </a></li>
+            <li><a href="../sobre.html"> Sobre </a></li>
         </ul>
     </nav>
     <?php
@@ -71,7 +75,8 @@ session_start();
         exclusao($conexao, $id);
    }
    ?>
-    <script src="modal.js"></script>
+    <script src="../JS/modal.js"></script>
+    <script src="../JS/menu.js"></script>
 
 </html>
 </div>
