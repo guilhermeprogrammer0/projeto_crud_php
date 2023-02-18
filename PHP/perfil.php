@@ -13,6 +13,7 @@ session_start();
     <script src="https://kit.fontawesome.com/ae27920976.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/style_media.css">
+    <link rel="shortcut icon" href="../imagens/img.jpg" type="image/x-icon">
 </head>
 
 <body>
