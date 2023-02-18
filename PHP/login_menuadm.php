@@ -47,7 +47,7 @@
      require_once "conexao.php";
      require_once "functions.php";
     if($_POST['logar']){
-        login($conexao, $_POST['email'], $_POST['senha'],'administrativo','menuadm');
+        login_menu($conexao, $_POST['email'], $_POST['senha'],'administrativo','menuadm');
     }
 
     ?>

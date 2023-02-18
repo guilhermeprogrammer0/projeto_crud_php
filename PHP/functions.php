@@ -41,6 +41,23 @@ function login($c, $e, $s,$tabela,$local)
 <?php
     }
 }
+function login_menu($c, $e, $s,$tabela,$local)
+{
+    $sql_verificar = "SELECT *  from " . $tabela . " WHERE email = '$e' AND senha  = '$s' ";
+    $sql = mysqli_query($c, $sql_verificar);
+    $qtd_linhas = mysqli_num_rows($sql);
+    if ($qtd_linhas > 0) {
+        while ($linha = mysqli_fetch_array($sql)) {
+            $_SESSION['id_adm'] = $linha['id'];
+        }
+        header("location: " .$local.".php");
+        $_SESSION['email'] = $e;
+    } else {
+            ?>
+<script>alert('Usuário Não encontrado em nossa base de dados!');</script>
+<?php
+    }
+}
 function alteracao($c, $n, $e, $s, $id,$tabela)
 {
     $sql_alterar = "UPDATE " . $tabela . " set nome = '$n', email = '$e', senha = '$s' WHERE id = $id";
