@@ -1,6 +1,5 @@
 @charset "UTF8";
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300&display=swap');
-
 @media screen and (max-width:600px) {
     header h1 {
         font-size: 1em;
@@ -110,5 +109,4 @@
         font-size: 1.2em;
 
     }
-
 }
