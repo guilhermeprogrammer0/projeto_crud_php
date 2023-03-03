@@ -3,7 +3,6 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,19 +14,19 @@ session_start();
     <link rel="stylesheet" href="../CSS/style_media.css">
     <link rel="shortcut icon" href="../imagens/img.jpg" type="image/x-icon">
 </head>
-
 <body>
     <section class="ab-modal" id="ab-modal">
         <div class="m">
-            <h1>Deseja mesmo Excluir?</h1>
+            <h2>Deseja mesmo Excluir?</h2>
             <form action="perfil.php" method="POST">
                 <div class="sep-2">
-                    <input type="button" class="btn btn-warning" id="fechar" value="Não">
-                    <input type="submit" class="btn btn-danger" name="excluir" value="Sim">
+                    <input type="button" class="btn btn-warning btn-modal" id="fechar" value="Não">
+                    <input type="submit" class="btn btn-danger btn-modal" name="excluir" value="Sim">
                 </div>
+            </form>
         </div>
     </section>
-    </form>
+    
     <header>
         <h1>Projeto Back-End</h1>
     </header>
@@ -55,7 +54,7 @@ session_start();
     $sql_mostrar = mysqli_query($conexao, $sql_select);
     while ($row = mysqli_fetch_array($sql_mostrar)) {
     ?>
-    <main class="main">
+    <main class="main-card">
         <div class="card" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title"><?php echo $row['nome']; ?> </h5>
@@ -68,6 +67,7 @@ session_start();
 
             </ul>
             <?php } ?>
+    </div>
     </main>
     <div id="logout">
         <a href="logout.php" class="card-link">Sair</a>
@@ -79,6 +79,5 @@ session_start();
    ?>
     <script src="../JS/modal.js"></script>
     <script src="../JS/menu.js"></script>
-
+</body>
 </html>
-</div>

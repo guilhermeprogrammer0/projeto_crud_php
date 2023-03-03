@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +11,6 @@
     <link rel="stylesheet" href="../CSS/style_media.css">
     <link rel="shortcut icon" href="../imagens/img.jpg" type="image/x-icon">
 </head>
-
 <body>
     <header>
         <h1>Projeto Back-End</h1>
@@ -70,5 +68,4 @@
   <script src="../JS/script.js"></script>
 <script src="../JS/menu.js"></script>
 </body>
-
 </html>
