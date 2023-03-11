@@ -78,9 +78,6 @@ function alteracao_menu($c,$e,$s,$tabela)
     $sql_alterar = "UPDATE " . $tabela . " set email = '$e', senha = '$s'";
     $sql_alterado = mysqli_query($c, $sql_alterar);
     if ($sql_alterado) {
-        while ($linha = mysqli_fetch_array($sql_alterado)) {
-            $_SESSION['id'] = $linha['id'];
-        }
     ?>
 <script>alert('Alteração realizada com Sucesso');</script><?php
     } else {
