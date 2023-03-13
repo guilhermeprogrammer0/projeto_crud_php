@@ -34,7 +34,6 @@ function login($c, $e, $s,$tabela,$local)
             $_SESSION['id'] = $linha['id'];
         }
         header("location: " .$local.".php");
-        $_SESSION['email'] = $e;
     } else {
             ?>
 <script>alert('Usuário Não encontrado em nossa base de dados!');</script>
@@ -51,7 +50,6 @@ function login_menu($c, $e, $s,$tabela,$local)
             $_SESSION['id_adm'] = $linha['id'];
         }
         header("location: " .$local.".php");
-        $_SESSION['email'] = $e;
     } else {
             ?>
 <script>alert('Usuário Não encontrado em nossa base de dados!');</script>
@@ -92,7 +90,6 @@ function exclusao($c,$id){
         session_unset();
         session_destroy();
         ?>
-       
         <script>alert('Usuário Excluído');</script>
         <?php
     }
