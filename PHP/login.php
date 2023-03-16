@@ -25,13 +25,13 @@
         <ul class="menu">
             <li><a href="../index.html"> Início </a></li>
             <li><a href="cadastro.php"> Cadastro </a></li>
-            <li><a href="login.php"> Login</a></li>
+            <li><a href="login.php">Entrar</a></li>
             <li><a href="../sobre.html"> Sobre </a></li>
         </ul>
     </nav>
     <main class="main">
         <section class="escrito3">
-            <h1>Logar</h1>
+            <h1>Entrar</h1>
         </section>
         <section class="formulario">
             <form action="login.php" method="POST">

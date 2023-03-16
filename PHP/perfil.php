@@ -40,7 +40,7 @@ session_start();
         <ul class="menu">
             <li><a href="../index.html"> Início </a></li>
             <li><a href="cadastro.php"> Cadastro </a></li>
-            <li><a href="login.php"> Login</a></li>
+            <li><a href="login.php">Entrar</a></li>
             <li><a href="../sobre.html"> Sobre </a></li>
         </ul>
     </nav>
