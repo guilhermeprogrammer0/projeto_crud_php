@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <h1>Projeto Back-End</h1>
+        <h1>Projeto</h1>
     </header>
     <div id="btn_toggle">
         <i class="fa-solid fa-bars fa-3x" id="btnToggle"></i>

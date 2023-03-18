@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <h1>Login - Menu Administrativo</h1>
+        <h1>Entrar - Menu Administrativo</h1>
     </header>
     
     <main class="main">
