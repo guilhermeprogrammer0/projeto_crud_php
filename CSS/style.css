@@ -103,6 +103,14 @@ nav {
     align-items: center;
 
 }
+.texto-tec
+{
+    display:flex;
+    align-items: center;
+}
+.texto-tec h1{
+    font-family: 'Oswald';
+}
 .img {
     position: absolute;
     width: 100%;
@@ -158,9 +166,13 @@ nav {
     font-size: 3em;
 }
 .formulario {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     width: 40%;
     background-color: white;
-    height:auto;
+    height: auto;
+    border-radius:5px;
 }
 
 .mb-3 {

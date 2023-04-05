@@ -16,7 +16,7 @@
         margin: auto;
         margin-top: 20px;
         height: 500px;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .finalidade,
@@ -79,6 +79,10 @@
 
     .finalidade h1,.finalidade-alterar h1{
         font-size: 2.3em;
+    }
+    .form-control
+    {
+        width:80%;
     }
 
     .texto {

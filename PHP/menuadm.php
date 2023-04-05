@@ -26,9 +26,9 @@ session_start();
     $sql = "SELECT * FROM cadastro";
     $sql_select = mysqli_query($conexao,$sql);
    ?>
-   <h1>Cadastros Realizados</h1>
+   <h1 id="texto-adm">Cadastros Realizados</h1>
     <main class="tabela-usuarios">
-    <table class="table table-dark table-hover">
+    <table class="table table-striped">
     <thead>
   
     <tr>
