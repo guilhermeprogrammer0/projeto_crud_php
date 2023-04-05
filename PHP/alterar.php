@@ -32,7 +32,7 @@
         </ul>
     </nav>
     <main class="main">
-        <section class="escrito4">
+        <section class="finalidade-alterar">
             <h1>Alterar Dados</h1>
         </section>
         <?php
@@ -64,7 +64,7 @@
                 </div>
                 <?php }?>
                 <div class="botoes">
-                    <input type="submit" class="btn btn-primary" name="alterar" value="Alterar">
+                    <input type="submit" class="btn btn-warning" name="alterar" value="Alterar">
                     </form>
                     <a href="perfil.php" class="link"> Perfil</a>
                 </div>

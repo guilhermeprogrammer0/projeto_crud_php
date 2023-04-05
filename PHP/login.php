@@ -30,7 +30,7 @@
         </ul>
     </nav>
     <main class="main">
-        <section class="escrito3">
+        <section class="finalidade">
             <h1>Entrar</h1>
         </section>
         <section class="formulario">

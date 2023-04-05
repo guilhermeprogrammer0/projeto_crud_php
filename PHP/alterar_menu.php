@@ -14,18 +14,17 @@
 
 <body>
     <header>
-        <h1>Alterar login do Menu Aministrativo</h1>
+        <h1>Alterar login</h1>
     </header>
     
     <main class="main">
-        <section class="escrito3">
+        <section class="finalidade-alterar">
             <h1>Alterar Login</h1>
         </section>
         <?php
         error_reporting(0);
         require_once "conexao.php";
         require_once "protecao_menu.php";
-        
         $id = $_SESSION['id'];
         $sql_select = "SELECT * FROM administrativo";
         $select = mysqli_query($conexao,$sql_select);
@@ -47,7 +46,7 @@
                 </div>
                 <?php }?>
                 <div class="botoes">
-                    <input type="submit" class="btn btn-primary" name="alterar" value="Alterar">
+                    <input type="submit" class="btn btn-warning" name="alterar" value="Alterar">
                     </form>
                     <a href="menuadm.php" class="link"> Menu ADM</a>
                 </div>

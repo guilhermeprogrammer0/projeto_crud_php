@@ -30,7 +30,7 @@
         </ul>
     </nav>
     <main class="main">
-        <section class="escrito3">
+        <section class="finalidade">
             <h1>Cadastrar - se</h1>
         </section>
         <section class="formulario">
@@ -51,7 +51,6 @@
                         <p id="oculta_mostra">Mostrar Senha</p>
                     </div>
                 </div>
-
                 <div class="botoes">
                 <input type="reset" class="btn btn-warning" value="Limpar">
                 <input type="submit" class="btn btn-primary" id="btn_cadastro" name="enviar" value="Enviar">

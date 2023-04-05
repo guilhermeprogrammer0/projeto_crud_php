@@ -50,7 +50,7 @@ session_start();
     </main>
     <section class="container">
         <div class="botoes">
-        <a href="alterar_menu.php"><button class="btn btn-primary btn-lg">Alterar login Menu</button> </a>
+        <a href="alterar_menu.php"><button class="btn btn-warning btn-lg">Alterar login Menu</button> </a>
         <a href="logout_adm.php"><button class="btn btn-danger btn-lg">Sair</button> </a>
         
         </div>

@@ -14,11 +14,11 @@
 
 <body>
     <header>
-        <h1>Entrar - Menu Administrativo</h1>
+        <h1>Menu Administrativo</h1>
     </header>
     
     <main class="main">
-        <section class="escrito3">
+        <section class="finalidade">
             <h1>Logar</h1>
         </section>
         <section class="formulario">
@@ -33,12 +33,10 @@
                     <div id="feedback">
                         <p id="oculta_mostra">Mostrar Senha</p>
                     </div>
-                </div>
-
+            </div>
                 <div class="botoes">
                 <input type="reset" class="btn btn-warning" value="Limpar">
                 <input type="submit" class="btn btn-primary" name="logar" value="Logar">
-    
                 </div>
             </form>
         </section>

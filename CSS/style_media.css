@@ -16,16 +16,19 @@
         margin: auto;
         margin-top: 20px;
         height: 500px;
+        justify-content: center;
     }
 
-    .escrito3,
-    .escrito4 {
+    .finalidade,
+    .finalidade-alterar{
         width: 100%;
         border-radius: 0px;
     }
 
     .formulario {
         width: 100%;
+        height:auto;
+        padding:8px;
     } 
     .m {
         width: 60%;
@@ -70,13 +73,12 @@
         height: 500px;
     }
 
-    .escrito2 {
+    .finalidade,.finalidade-alterar {
         width: 100%;
     }
 
-    .escrito2 h1 {
-        font-family: 'Oswald';
-        font-size: 1.9em;
+    .finalidade h1,.finalidade-alterar h1{
+        font-size: 2.3em;
     }
 
     .texto {
