@@ -29,16 +29,16 @@ header h1 {
 }
 
 .main {
-    width: 100%;
+    width: 80%;
     display: flex;
+    margin:auto;
     height: 400px;
     justify-content: space-around;
     padding:8px;
 }
-
 .finalidade,
 .finalidade-alterar {
-    width: 30%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;

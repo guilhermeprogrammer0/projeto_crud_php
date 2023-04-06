@@ -13,7 +13,6 @@
     .main {
         flex-direction: column;
         width: 80%;
-        margin: auto;
         margin-top: 20px;
         height: 500px;
         justify-content: flex-start;
@@ -23,11 +22,12 @@
     .finalidade-alterar{
         width: 100%;
         border-radius: 0px;
+        height:80px;
     }
 
     .formulario {
         width: 100%;
-        height:auto;
+        height:420px;
         padding:8px;
     } 
     .m {

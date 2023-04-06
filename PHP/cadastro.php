@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="../CSS/style_media.css">
     <link rel="shortcut icon" href="../imagens/img.jpg" type="image/x-icon">
 </head>
-
 <body>
     <header>
         <h1>Projeto</h1>
@@ -65,16 +64,9 @@
     if($_POST['enviar']){
         cadastro($conexao, $_POST['nome'], $_POST['email'], $_POST['senha']);
     }
-
-
     ?>
-
-
-
-
-
     <script src="../JS/script.js"></script>
+    <script src="../JS/script2.js"></script>
     <script src="../JS/menu.js"></script>
 </body>
-
 </html>

@@ -131,8 +131,9 @@ nav {
     font-size: 0.9em;
 }
 .main {
-    width: 100%;
+    width: 80%;
     display: flex;
+    margin:auto;
     height: 400px;
     justify-content: space-around;
     padding:8px;
@@ -146,7 +147,7 @@ nav {
 
 .finalidade,
 .finalidade-alterar {
-    width: 30%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,7 +170,7 @@ nav {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    width: 40%;
+    width: 50%;
     background-color: white;
     height: auto;
     border-radius:5px;

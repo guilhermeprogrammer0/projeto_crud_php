@@ -11,12 +11,10 @@
     <link rel="stylesheet" href="../CSS/style_media.css">
     <link rel="shortcut icon" href="../imagens/img.jpg" type="image/x-icon">
 </head>
-
 <body>
     <header>
         <h1>Alterar login</h1>
     </header>
-    
     <main class="main">
         <section class="finalidade-alterar">
             <h1>Alterar Login</h1>
@@ -58,9 +56,7 @@
     if($_POST['alterar']){
         alteracao_menu($conexao,$_POST['email'], $_POST['senha'],'administrativo');
     }
-
     ?>
  <script src="../JS/script2.js"></script>
 </body>
-
 </html>

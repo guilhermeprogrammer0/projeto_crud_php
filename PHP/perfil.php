@@ -26,7 +26,6 @@ session_start();
             </form>
         </div>
     </section>
-    
     <header>
         <h1>Projeto</h1>
     </header>

@@ -1,7 +1,6 @@
 <?php session_start();?>
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -76,10 +75,8 @@
     if($_POST['alterar']){
         alteracao($conexao, $_POST['nome'], $_POST['email'], $_POST['senha'],$id,'cadastro');
     }
-
     ?>
  <script src="../JS/script2.js"></script>
  <script src="../JS/menu.js"></script>
 </body>
-
 </html>
