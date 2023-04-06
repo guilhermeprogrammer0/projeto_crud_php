@@ -61,11 +61,11 @@ function alteracao($c, $n, $e, $s, $id,$tabela)
     $sql_alterar = "UPDATE " . $tabela . " set nome = '$n', email = '$e', senha = '$s' WHERE id = $id";
     $sql_alterado = mysqli_query($c, $sql_alterar);
     if ($sql_alterado) {
+        ?>
+        <script>alert('Alteração realizada com Sucesso.');</script><?php
         while ($linha = mysqli_fetch_array($sql_alterado)) {
             $_SESSION['id'] = $linha['id'];
         }
-    ?>
-<script>alert('Alteração realizada com Sucesso');</script><?php
     } else {
         ?>
 <script>alert('ERRO!');</script><?php
@@ -77,7 +77,7 @@ function alteracao_menu($c,$e,$s,$tabela)
     $sql_alterado = mysqli_query($c, $sql_alterar);
     if ($sql_alterado) {
     ?>
-<script>alert('Alteração realizada com Sucesso');</script><?php
+<script>alert('Alteração realizada com Sucesso.');</script><?php
     } else {
         ?>
 <script>alert('ERRO!');</script><?php
@@ -90,7 +90,7 @@ function exclusao($c,$id){
         session_unset();
         session_destroy();
         ?>
-        <script>alert('Usuário Excluído');</script>
+        <script>alert('Usuário Excluído.');</script>
         <?php
     }
     else{
