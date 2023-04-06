@@ -45,7 +45,6 @@
     if($_POST['logar']){
         login_menu($conexao, $_POST['email'], $_POST['senha'],'administrativo','menuadm');
     }
-
     ?>
   <script src="../JS/script2.js"></script>
 </body>
