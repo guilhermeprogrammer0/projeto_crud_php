@@ -1,4 +1,4 @@
-var senha = document.getElementById("senha");
+let senha = document.getElementById("senha");
 let oculta_mostra = document.getElementById("oculta_mostra");
 oculta_mostra.addEventListener('click',op_senha);
 function op_senha(){

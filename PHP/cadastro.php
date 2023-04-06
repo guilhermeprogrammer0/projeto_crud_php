@@ -66,7 +66,6 @@
     }
     ?>
     <script src="../JS/script.js"></script>
-    <script src="../JS/script2.js"></script>
     <script src="../JS/menu.js"></script>
 </body>
 </html>
