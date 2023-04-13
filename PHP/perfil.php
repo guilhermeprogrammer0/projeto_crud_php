@@ -52,24 +52,22 @@ session_start();
     $sql_select = "SELECT * FROM cadastro WHERE id= $id";
     $sql_mostrar = mysqli_query($conexao, $sql_select);
     while ($row = mysqli_fetch_array($sql_mostrar)) {
+        $img = "../Upload/" . $row['foto'];
     ?>
     <main class="main-card">
         <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title"><?php echo $row['nome']; ?> </h5>
-            </div>
+        <img src="<?php echo $img ?>"class="card-img-top img-perfil " alt="Foto-Perfil">
             <ul class="list-group list-group-flush">
-                <li class="list-group-item"><?php echo $row['id']; ?></li>
+            <li class="list-group-item"><?php echo $row['nome']; ?></li>
                 <li class="list-group-item"><?php echo $row['email']; ?></li>
                 <li class="list-group-item"><a href="alterar.php" class="link"> Alterar Dados</a></li>
                 <li class="list-group-item"><p id="excluir" style="color:red; cursor:pointer;"> Excluir Perfil</p></li>
-
             </ul>
             <?php } ?>
     </div>
     </main>
     <div id="logout">
-        <a href="logout.php" class="card-link">Sair</a>
+        <a href="logout.php" class="class-link">Sair</a>
     </div>
     <?php
    if ($_POST['excluir']) {

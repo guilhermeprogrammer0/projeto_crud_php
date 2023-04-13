@@ -1,6 +1,6 @@
 <?php
 session_start();
-function cadastro($c, $n, $e, $s)
+function cadastro($c, $n, $e, $s,$foto)
 {
     $sql_verificar = "SELECT email from cadastro  WHERE email = '$e' ";
     $sql = mysqli_query($c, $sql_verificar);
@@ -10,7 +10,11 @@ function cadastro($c, $n, $e, $s)
 <script>alert('E-mail Indisponível');</script>
 <?php
     } else {
-        $sql_cadastrar = "INSERT INTO cadastro VALUES(default,'$n','$e','$s')";
+        $extensao = strtolower(substr($_FILES['foto']['name'],-4));
+        $foto = md5(time()) . $extensao;
+        $diretorio = "../Upload/";
+        move_uploaded_file($_FILES['foto']['tmp_name'],$diretorio.$foto);
+        $sql_cadastrar = "INSERT INTO cadastro VALUES(default,'$n','$e','$s','$foto')";
         $sql_cadastro = mysqli_query($c, $sql_cadastrar);
         if ($sql_cadastro) {
 ?>

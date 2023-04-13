@@ -33,7 +33,7 @@
             <h1>Cadastrar - se</h1>
         </section>
         <section class="formulario">
-            <form action="cadastro.php" method="POST">
+            <form action="cadastro.php" method="POST" enctype="multipart/form-data">
                 <div class="mb-3">
                     <label for="nome" class="form-label">Nome</label>
                     <input type="text" class="form-control" id="nome" name="nome" required>
@@ -50,6 +50,10 @@
                         <p id="oculta_mostra">Mostrar Senha</p>
                     </div>
                 </div>
+                <div class="mb-3">
+                <label for="foto" class="form-label">Inserir foto</label>
+                     <input class="form-control" name="foto" id="foto" type="file">
+                </div>
                 <div class="botoes">
                 <input type="reset" class="btn btn-warning" value="Limpar">
                 <input type="submit" class="btn btn-primary" id="btn_cadastro" name="enviar" value="Enviar">
@@ -62,7 +66,7 @@
     require_once "conexao.php";
     require_once "functions.php";
     if($_POST['enviar']){
-        cadastro($conexao, $_POST['nome'], $_POST['email'], $_POST['senha']);
+        cadastro($conexao, $_POST['nome'], $_POST['email'], $_POST['senha'],$_POST['foto']);
     }
     ?>
     <script src="../JS/script.js"></script>
