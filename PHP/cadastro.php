@@ -52,7 +52,7 @@
                 </div>
                 <div class="mb-3">
                 <label for="foto" class="form-label">Inserir foto</label>
-                     <input class="form-control" name="foto" id="foto" type="file">
+                     <input class="form-control form-control-sm" name="foto" id="foto" type="file">
                 </div>
                 <div class="botoes">
                 <input type="reset" class="btn btn-warning" value="Limpar">
