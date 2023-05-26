@@ -1,5 +1,5 @@
 <?php
-session_start();
+require_once "functions.php";
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -22,7 +22,6 @@ session_start();
     error_reporting(0);
     require_once "conexao.php";
     require_once "protecao_menu.php";
-    require_once "functions.php";
     $sql = "SELECT * FROM cadastro";
     $sql_select = mysqli_query($conexao,$sql);
    ?>

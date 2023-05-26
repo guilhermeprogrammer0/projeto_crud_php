@@ -1,3 +1,4 @@
+<?php require_once "functions.php"; ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -41,7 +42,6 @@
     <?php
      error_reporting(0);
      require_once "conexao.php";
-     require_once "functions.php";
     if($_POST['logar']){
         login_menu($conexao, $_POST['email'], $_POST['senha'],'administrativo','menuadm');
     }

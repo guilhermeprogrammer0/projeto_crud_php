@@ -1,5 +1,5 @@
 <?php
-session_start();
+require_once "functions.php";
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -47,7 +47,6 @@ session_start();
     error_reporting(0);
     require_once "conexao.php";
     require_once "protecao.php";
-    require_once "functions.php";
     $id = $_SESSION['id'];
     $sql_select = "SELECT * FROM cadastro WHERE id= $id";
     $sql_mostrar = mysqli_query($conexao, $sql_select);

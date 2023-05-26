@@ -40,7 +40,7 @@ function login($c, $e, $s,$tabela,$local)
         header("location: " .$local.".php");
     } else {
             ?>
-<script>alert('Usuário Não encontrado em nossa base de dados!');</script>
+<script>alert('E-mail e/ou senha inválidos.');</script>
 <?php
     }
 }
@@ -56,7 +56,7 @@ function login_menu($c, $e, $s,$tabela,$local)
         header("location: " .$local.".php");
     } else {
             ?>
-<script>alert('Usuário Não encontrado em nossa base de dados!');</script>
+<script>alert('E-mail e/ou senha inválidos.');</script>
 <?php
     }
 }

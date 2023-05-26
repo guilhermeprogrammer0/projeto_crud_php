@@ -1,4 +1,4 @@
-<?php session_start();?>
+<?php require_once "functions.php";?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -52,7 +52,6 @@
         </section>
     </main>
     <?php 
-    require_once "functions.php";
     if($_POST['alterar']){
         alteracao_menu($conexao,$_POST['email'], $_POST['senha'],'administrativo');
     }
