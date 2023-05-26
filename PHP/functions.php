@@ -67,9 +67,6 @@ function alteracao($c, $n, $e, $s, $id,$tabela)
     if ($sql_alterado) {
         ?>
         <script>alert('Alteração realizada com Sucesso.');</script><?php
-        while ($linha = mysqli_fetch_array($sql_alterado)) {
-            $_SESSION['id'] = $linha['id'];
-        }
     } else {
         ?>
 <script>alert('ERRO!');</script><?php
