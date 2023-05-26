@@ -88,8 +88,7 @@ function exclusao($c,$id){
     $sql_excluir = "DELETE FROM cadastro  WHERE id = $id";
     $sql_excluido = mysqli_query($c,$sql_excluir);
     if($sql_excluido){
-        session_unset();
-        session_destroy();
+        unset($_SESSION['id']);
         ?>
         <script>alert('Usuário Excluído.');</script>
         <?php
