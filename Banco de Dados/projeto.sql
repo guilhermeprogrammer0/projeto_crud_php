@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 09-Fev-2023 às 17:32
--- Versão do servidor: 10.4.27-MariaDB
--- versão do PHP: 8.0.25
+-- Tempo de geração: 19/10/2023 às 20:45
+-- Versão do servidor: 10.4.28-MariaDB
+-- Versão do PHP: 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -26,7 +26,7 @@ USE `projeto`;
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `administrativo`
+-- Estrutura para tabela `administrativo`
 --
 
 CREATE TABLE `administrativo` (
@@ -36,7 +36,7 @@ CREATE TABLE `administrativo` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
--- Extraindo dados da tabela `administrativo`
+-- Despejando dados para a tabela `administrativo`
 --
 
 INSERT INTO `administrativo` (`id`, `email`, `senha`) VALUES
@@ -45,43 +45,35 @@ INSERT INTO `administrativo` (`id`, `email`, `senha`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `cadastro`
+-- Estrutura para tabela `cadastro`
 --
 
 CREATE TABLE `cadastro` (
   `id` int(11) NOT NULL,
   `nome` varchar(100) DEFAULT NULL,
   `email` varchar(100) DEFAULT NULL,
-  `senha` varchar(100) DEFAULT NULL
+  `senha` varchar(100) DEFAULT NULL,
+  `foto` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
-
---
--- Extraindo dados da tabela `cadastro`
---
-
-INSERT INTO `cadastro` (`id`, `nome`, `email`, `senha`) VALUES
-(3, 'Kethilin', 'keth@teste.com', 'kethegui'),
-(4, 'Isabely Silva', 'isabelysouza123@gmail.com', 'isabely123.'),
-(6, 'Guilherme', 'guilherme@teste.com', '152415');
 
 --
 -- Índices para tabelas despejadas
 --
 
 --
--- Índices para tabela `administrativo`
+-- Índices de tabela `administrativo`
 --
 ALTER TABLE `administrativo`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `cadastro`
+-- Índices de tabela `cadastro`
 --
 ALTER TABLE `cadastro`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de tabelas despejadas
+-- AUTO_INCREMENT para tabelas despejadas
 --
 
 --
@@ -94,7 +86,7 @@ ALTER TABLE `administrativo`
 -- AUTO_INCREMENT de tabela `cadastro`
 --
 ALTER TABLE `cadastro`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -34,6 +34,7 @@ require_once "functions.php";
       <th scope="col">ID</th>
       <th scope="col">Nome</th>
       <th scope="col">E-mail</th>
+      <th scope="col"  class="td-acoes">Ações</th>
     </tr>
   </thead>
   <tbody>
@@ -42,6 +43,11 @@ require_once "functions.php";
         <td><?php echo $row['id'];?> </td>
         <td><?php echo $row['nome'];?></td>
         <td><?php echo $row['email'];?> </td>
+        <td class="td-acoes">
+        <a class="btn btn-warning" href="editar.php?id=<?php echo $row['id'];?>"> Editar </button>
+        <a class="btn btn-danger" onclick="confirmarExclusao(<?php echo $row['id'];?>);"> Excluir </button>
+      
+      </td>
     </tr>
     <?php }?>
   </tbody>
@@ -55,6 +61,6 @@ require_once "functions.php";
         </div>
 
     </section>
-
+    <script src="../JS/excluirUsuario.js"></script>
 </body>
 </html>

@@ -126,3 +126,9 @@ h1 {
 .link {
     text-decoration: none;
 }
+.td-acoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
