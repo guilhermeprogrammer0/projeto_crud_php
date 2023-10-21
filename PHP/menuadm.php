@@ -44,8 +44,8 @@ require_once "functions.php";
         <td><?php echo $row['nome'];?></td>
         <td><?php echo $row['email'];?> </td>
         <td class="td-acoes">
-        <a class="btn btn-warning" href="editar.php?id=<?php echo $row['id'];?>"> Editar </button>
-        <a class="btn btn-danger" onclick="confirmarExclusao(<?php echo $row['id'];?>);"> Excluir </button>
+        <a class="btn btn-warning" onclick="editarUsuario(<?php echo $row['id'];?>)"> Editar </button>
+        <a class="btn btn-danger" onclick="excluirUsuario(<?php echo $row['id'];?>);"> Excluir </button>
       
       </td>
     </tr>
@@ -61,6 +61,6 @@ require_once "functions.php";
         </div>
 
     </section>
-    <script src="../JS/excluirUsuario.js"></script>
+    <script src="../JS/acoes.js"></script>
 </body>
 </html>

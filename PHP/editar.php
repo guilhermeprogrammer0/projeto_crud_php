@@ -27,10 +27,9 @@
         $select = mysqli_query($conexao,$sql_select);
 
     while($row = mysqli_fetch_array($select)){
-        $id = $row['id'];
         ?>
       <section class="formulario">
-            <form action="editar.php?id=<?php echo $id;?>" method="POST">
+            <form action="editar.php?id=<?php echo $_REQUEST['id'];?>" method="POST">
             <div class="mb-3">
                     <label for="nome" class="form-label">Nome</label>
                     <input type="text" class="form-control"  id="nome" name="nome" value="<?php echo $row['nome']?>" required>
@@ -57,7 +56,7 @@
     </main>
     <?php 
     if($_POST['alterar']){
-        alteracao($conexao,$_POST['nome'],$_POST['email'],$_POST['senha'],$id,'cadastro');
+        alteracao($conexao,$_POST['nome'],$_POST['email'],$_POST['senha'],$_REQUEST['id'],'cadastro');
         header("location:menuadm.php");
     }
     ?>
