@@ -31,7 +31,7 @@
       <section class="formulario">
             <form action="editar_usuario.php" method="POST">
             <div class="mb-3">
-                    <label for="nome" class="form-label">Nome</label>
+                    <label for="id" class="form-label">Id</label>
                     <input type="hidden" class="form-control"  id="id" name="id" value="<?php echo $row['id']?>" required>
                 </div>
             <div class="mb-3">
